@@ -5,6 +5,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="./w3.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 <title>Matt DePero</title>
 <style>
 
@@ -13,7 +17,8 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .container {
@@ -170,21 +175,21 @@ body {
   <div class="w3-content" style="max-width:500px">
     <h4 class="w3-center">
       <span class="w3-tag w3-large w3-round w3-text-white" style="background-color: rgba(2, 14, 18, 0.6); padding: 2px 12px 4px 12px;">
-        <strong><em>get in touch</em></strong>
+        <strong><em>Get in Touch</em></strong>
       </span>
     </h4>
     <form action="https://formspree.io/f/mnqywljq" method="POST">
       <div class="w3-section w3-border">
-        <label>name</label>
-        <input class="w3-input w3-border w3-opacity-min" type="text" name="name" required>
+        <label for="name">Name</label>
+        <input class="w3-input w3-border w3-opacity-min" type="text" name="name" id="name" required>
       </div>
       <div class="w3-section w3-border">
-        <label>email</label>
-        <input class="w3-input w3-border w3-opacity-min" type="email" name="email" required>
+        <label for="email">Email</label>
+        <input class="w3-input w3-border w3-opacity-min" type="email" name="email" id="email" required>
       </div>
       <div class="w3-section w3-border">
-        <label>message</label>
-        <textarea class="w3-input w3-border w3-opacity-min" type="text" name="message" required></textarea>
+        <label for="message">Message</label>
+        <textarea class="w3-input w3-border w3-opacity-min" type="text" name="message" id="message" required></textarea>
       </div>
       <button type="submit" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link">Send Message</button>
     </form>
